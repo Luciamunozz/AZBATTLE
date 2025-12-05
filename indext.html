@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego Categorías</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="menu" class="pantalla">
+    <h1>Juego de Categorías</h1>
+    <h2>Selecciona una categoría</h2>
+    <select id="categoriaSelect">
+      <option value="peliculas">Películas</option>
+      <option value="series">Series</option>
+      <option value="libros">Títulos de libros</option>
+      <option value="actores">Actores / Actrices</option>
+      <option value="cantantes">Cantantes</option>
+      <option value="grupos">Grupos</option>
+      <option value="canciones">Canciones</option>
+    </select>
+
+    <h2>Dificultad</h2>
+    <select id="dificultadSelect">
+      <option value="120">Easy (2 min)</option>
+      <option value="90">Medium (1:30)</option>
+      <option value="60">Hard (1 min)</option>
+    </select>
+
+    <button id="startBtn">Comenzar</button>
+  </div>
+
+  <div id="juego" class="pantalla oculto">
+    <h1 id="tituloCategoria"></h1>
+    <h2 id="timer">Tiempo: 0</h2>
+
+    <div id="contenedorLetras"></div>
+    <button id="finalizarBtn">Finalizar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

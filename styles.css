@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: white;
+  text-align: center;
+}
+
+.pantalla {
+  padding: 40px;
+}
+
+.oculto {
+  display: none;
+}
+
+#contenedorLetras {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.celda {
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.celda input {
+  width: 90%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.correcto {
+  background-color: #4caf50 !important;
+}
+
+.incorrecto {
+  background-color: #c62828 !important;
+}
+
+button {
+  padding: 12px 20px;
+  margin-top: 25px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #ffca28;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
